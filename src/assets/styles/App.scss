@@ -1,0 +1,26 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $crema;
+  color: $brown;
+  font-family: $font;
+
+  // position: relative;
+  // overflow: hidden;
+}
+
+// .app {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   min-height: 100vh;
+// }
