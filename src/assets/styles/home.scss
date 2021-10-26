@@ -12,6 +12,11 @@
 
 .homeContent {
   width: calc(100vw - 78px);
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 }
 
 //Usando grid
@@ -42,6 +47,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+  width: 100%;
   // transition: all 0.5s ease;
 
   & img {
@@ -73,6 +79,7 @@
 
 .aboutContainer {
   display: flex;
+  width: 100%;
   // border: 2px pink solid;
   justify-content: center;
   padding: 4rem;

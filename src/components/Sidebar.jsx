@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../assets/styles/sidebar.scss";
+import cvPdf from "../assets/others/Resume_Catalina.pdf";
 
-const Sidebar = (props) => {
+const Sidebar = () => {
   const [sideBar, setSideBar] = useState(false);
 
   return (
@@ -21,6 +23,13 @@ const Sidebar = (props) => {
         </div>
         <ul className="nav_list">
           <li>
+            <Link to="/">
+              <i class="bx bx-home-alt"></i>
+              <span className="links_name">Home</span>
+            </Link>
+            <span className="tooltip">Home</span>
+          </li>
+          <li>
             <a href="/">
               <i class="bx bxs-folder-open"></i>
               <span className="links_name">Portfolio</span>
@@ -28,7 +37,7 @@ const Sidebar = (props) => {
             <span className="tooltip">Portfolio</span>
           </li>
           <li>
-            <a href="/">
+            <a href={cvPdf} target="_blank">
               <i class="bx bx-file-blank"></i>
               <span className="links_name">CV</span>
             </a>
@@ -40,6 +49,13 @@ const Sidebar = (props) => {
               <span className="links_name">Time Line</span>
             </a>
             <span className="tooltip">Time Line</span>
+          </li>
+          <li>
+            <Link to="/contactMe">
+              <i class="bx bxs-user"></i>
+              <span className="links_name">Contact me</span>
+            </Link>
+            <span className="tooltip">Contact me</span>
           </li>
         </ul>
       </div>
