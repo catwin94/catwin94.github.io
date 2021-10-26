@@ -48,6 +48,7 @@
       }
       & h3 {
         font-size: 1.4rem;
+        user-select: none;
       }
 
       &:hover {
@@ -65,7 +66,7 @@
   border-bottom: solid 2px $dpink;
   & h3 {
     font-size: 2rem;
-    padding-bottom: 0.5rem;
+    padding: 0 1rem 0.5rem 1rem;
   }
 }
 
@@ -91,8 +92,22 @@
         height: 2rem;
         margin-right: 1rem;
       }
-      & p {
-        padding: 0 0 1rem 0;
+      & div {
+        & .title {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+        & .date {
+          font-style: italic;
+          font-size: 1.5rem;
+          padding-bottom: 2rem;
+        }
+        & .details {
+          font-size: 1.8rem;
+        }
+        & .skills {
+          font-size: 1.8rem;
+        }
       }
     }
   }

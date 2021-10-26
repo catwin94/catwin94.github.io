@@ -19,7 +19,7 @@ const ContactMe = () => {
               <li>
                 <h2>E-mail:</h2>
                 <a href="mailto:cata.carabajal@gmail.com">
-                  <i class="bx bx-mail-send"></i>
+                  <i className="bx bx-mail-send"></i>
                   <p>cata.carabajal@gmail.com</p>
                 </a>
               </li>
@@ -30,7 +30,7 @@ const ContactMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="bx bxl-github"></i>
+                  <i className="bx bxl-github"></i>
                   <p>catwin94</p>
                 </a>
               </li>
@@ -41,7 +41,7 @@ const ContactMe = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i class="bx bxl-linkedin-square"></i>
+                  <i className="bx bxl-linkedin-square"></i>
                   <p>catalina-carabajal</p>
                 </a>
               </li>

@@ -24,21 +24,21 @@ const Sidebar = () => {
         <ul>
           <li>
             <Link to="/">
-              <i class="bx bx-home-alt"></i>
+              <i className="bx bx-home-alt"></i>
               <span className="links_name">Home</span>
             </Link>
             <span className="tooltip">Home</span>
           </li>
           <li>
             <Link to="/contactMe">
-              <i class="bx bxs-user"></i>
+              <i className="bx bxs-user"></i>
               <span className="links_name">Contact me</span>
             </Link>
             <span className="tooltip">Contact me</span>
           </li>
           <li>
             <Link to="/portfolio">
-              <i class="bx bxs-folder-open"></i>
+              <i className="bx bxs-folder-open"></i>
               <span className="links_name">Portfolio</span>
             </Link>
             <span className="tooltip">Portfolio</span>
@@ -46,7 +46,7 @@ const Sidebar = () => {
 
           <li>
             <a href="/">
-              <i class="bx bx-history"></i>
+              <i className="bx bx-history"></i>
               <span className="links_name">Time Line</span>
             </a>
             <span className="tooltip">Time Line</span>
@@ -54,7 +54,7 @@ const Sidebar = () => {
 
           <li>
             <a href={cvPdf} target="_blank" rel="noreferrer">
-              <i class="bx bx-file-blank"></i>
+              <i className="bx bx-file-blank"></i>
               <span className="links_name">PDF CV</span>
             </a>
             <span className="tooltip">PDF CV</span>

@@ -48,21 +48,21 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bx bxl-linkedin-square"></i>
+                <i className="bx bxl-linkedin-square"></i>
               </a>
               <a
                 href="https://github.com/catwin94"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bx bxl-github"></i>
+                <i className="bx bxl-github"></i>
               </a>
               <a
                 href="https://www.instagram.com/catacarabajal/?hl=es"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="bx bxl-instagram-alt"></i>
+                <i className="bx bxl-instagram-alt"></i>
               </a>
             </div>
           </div>
