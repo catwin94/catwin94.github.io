@@ -34,11 +34,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 
     & li {
       border: 3px solid $dpink;
       // background: $white;
       padding: 5px;
+      margin: 1px 0;
       border-radius: 1rem;
       text-align: center;
       width: 20rem;
@@ -61,6 +63,12 @@
   }
 }
 
+.activeButton {
+  background-color: $dpink;
+  color: $white;
+  cursor: pointer;
+}
+
 .portfolioTitle {
   // border: solid 2px red;
   border-bottom: solid 2px $dpink;
@@ -77,12 +85,14 @@
 
   & ul {
     list-style: none;
+
     & li {
       display: flex;
       flex-direction: row;
       // border: solid 2px rgb(223, 62, 62);
       padding: 1rem;
-      margin: 1rem 0;
+      margin: 2rem 0;
+      padding-bottom: 20px;
       border-radius: 1rem;
       box-shadow: 0px 0px 23px 0px rgba(65, 47, 47, 0.4);
       & i {
@@ -90,12 +100,14 @@
 
         width: 2rem;
         height: 2rem;
+
         margin-right: 1rem;
       }
       & div {
         & .title {
           font-weight: bold;
           font-size: 2rem;
+          margin-bottom: 2rem;
         }
         & .date {
           font-style: italic;
@@ -106,7 +118,14 @@
           font-size: 1.8rem;
         }
         & .skills {
+          display: inline;
           font-size: 1.8rem;
+          border: solid $dpink 2px;
+          color: $dpink;
+          border-radius: 5px;
+          margin: 2px 2px;
+          padding: 2px;
+          width: fit-content;
         }
       }
     }

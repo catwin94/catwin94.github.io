@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
 import "../assets/styles/portfolio.scss";
 import "../assets/styles/home.scss";
@@ -54,8 +54,8 @@ const data = {
       {
         name: "Frameworks and Librearies of JavaScipt / Plazi",
         skills: [
-          "React functional",
-          "components Styled components",
+          "React functional components",
+          "Styled components",
           "CSS-in-JS",
         ],
       },
@@ -100,6 +100,8 @@ const data = {
 };
 
 const Portfolio = () => {
+  const [check, setCheck] = useState("");
+
   return (
     <div className="mainContainer">
       <Sidebar />
@@ -110,11 +112,14 @@ const Portfolio = () => {
           </div>
           <div className="navBarPortfolio">
             <ul>
-              <li onClick={() => console.log("hiciste click")}>
+              <li>
                 <i className="bx bxs-graduation"></i>
                 <h3>Education</h3>
               </li>
-              <li>
+              <li
+                onClick={() => setCheck("courses")}
+                className={` ${check === "courses" && "activeButton"}`}
+              >
                 <i className="bx bxs-book-bookmark"></i>
                 <h3>Courses</h3>
               </li>
@@ -122,47 +127,64 @@ const Portfolio = () => {
                 <i className="bx bxs-book-open"></i>
                 <h3>Skills</h3>
               </li>
-              <li>
+              <li
+                onClick={() => setCheck("experience")}
+                className={` ${check === "experience" && "activeButton"}`}
+              >
                 <i className="bx bxs-briefcase"></i>
                 <h3>Work Experience</h3>
               </li>
             </ul>
           </div>
-          <div className="dataContainer">
-            <div className="portfolioTitle">
-              <h3>Experience</h3>
-            </div>
-            <div className="portfolioData">
-              <ul>
-                {data.experience.list.map((item, key) => (
-                  <li key={key}>
-                    <i className="bx bxs-diamond"></i>
-                    <div>
-                      <p className="title">
-                        {item.name} at {item.enterprice}
-                      </p>
-                      <p className="date">{item.date}</p>
-                      <p className="details">{item.details}</p>
-                    </div>
-                  </li>
-                ))}
 
-                {data.courses.list.map((item, key) => (
-                  <li key={key}>
-                    <i className="bx bxs-diamond"></i>
-                    <div>
-                      <p className="title">{item.name}</p>
-                      {item.skills.map((skill, key) => (
-                        <p className="skills" key={key}>
-                          {skill}
+          {check === "experience" && (
+            <div className="dataContainer">
+              <div className="portfolioTitle">
+                <h3>Experience</h3>
+              </div>
+              <div className="portfolioData">
+                <ul>
+                  {data.experience.list.map((item, key) => (
+                    <li key={key}>
+                      <i className="bx bxs-diamond"></i>
+                      <div>
+                        <p className="title">
+                          {item.name} at {item.enterprice}
                         </p>
-                      ))}
-                    </div>
-                  </li>
-                ))}
-              </ul>
+                        <p className="date">{item.date}</p>
+                        <p className="details">{item.details}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+          )}
+
+          {check === "courses" && (
+            <div className="dataContainer">
+              <div className="portfolioTitle">
+                <h3>Courses</h3>
+              </div>
+              <div className="portfolioData">
+                <ul>
+                  {data.courses.list.map((item, key) => (
+                    <li key={key}>
+                      <i className="bx bxs-diamond"></i>
+                      <div>
+                        <p className="title">{item.name}</p>
+                        {item.skills.map((skill, key) => (
+                          <p className="skills" key={key}>
+                            {skill}
+                          </p>
+                        ))}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

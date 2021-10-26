@@ -44,13 +44,13 @@ const Sidebar = () => {
             <span className="tooltip">Portfolio</span>
           </li>
 
-          <li>
+          {/* <li>
             <a href="/">
               <i className="bx bx-history"></i>
               <span className="links_name">Time Line</span>
             </a>
             <span className="tooltip">Time Line</span>
-          </li>
+          </li> */}
 
           <li>
             <a href={cvPdf} target="_blank" rel="noreferrer">
