@@ -25,7 +25,11 @@ const ContactMe = () => {
               </li>
               <li>
                 <h2>GitHub:</h2>
-                <a href="https://github.com/catwin94" target="_blank">
+                <a
+                  href="https://github.com/catwin94"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i class="bx bxl-github"></i>
                   <p>catwin94</p>
                 </a>
@@ -35,6 +39,7 @@ const ContactMe = () => {
                 <a
                   href="https://www.linkedin.com/in/catalina-carabajal/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i class="bx bxl-linkedin-square"></i>
                   <p>catalina-carabajal</p>

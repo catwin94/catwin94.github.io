@@ -46,15 +46,21 @@ const Home = () => {
               <a
                 href="https://www.linkedin.com/in/catalina-carabajal/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <i class="bx bxl-linkedin-square"></i>
               </a>
-              <a href="https://github.com/catwin94" target="_blank">
+              <a
+                href="https://github.com/catwin94"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <i class="bx bxl-github"></i>
               </a>
               <a
                 href="https://www.instagram.com/catacarabajal/?hl=es"
                 target="_blank"
+                rel="noreferrer"
               >
                 <i class="bx bxl-instagram-alt"></i>
               </a>
@@ -63,8 +69,8 @@ const Home = () => {
 
           <img className="perfil-img" src={perfilImg} alt="" />
         </div>
-        <section className="aboutContainer">
-          <div className="about">
+        <section className="dataContainer">
+          <div className="infoContainer">
             <h3>About Me</h3>
             {homeData.about.map((text) => (
               <p>{text}</p>

@@ -21,7 +21,7 @@ const Sidebar = () => {
             }}
           />
         </div>
-        <ul className="nav_list">
+        <ul>
           <li>
             <Link to="/">
               <i class="bx bx-home-alt"></i>
@@ -30,19 +30,20 @@ const Sidebar = () => {
             <span className="tooltip">Home</span>
           </li>
           <li>
-            <a href="/">
-              <i class="bx bxs-folder-open"></i>
-              <span className="links_name">Portfolio</span>
-            </a>
-            <span className="tooltip">Portfolio</span>
+            <Link to="/contactMe">
+              <i class="bx bxs-user"></i>
+              <span className="links_name">Contact me</span>
+            </Link>
+            <span className="tooltip">Contact me</span>
           </li>
           <li>
-            <a href={cvPdf} target="_blank">
-              <i class="bx bx-file-blank"></i>
-              <span className="links_name">CV</span>
-            </a>
-            <span className="tooltip">CV</span>
+            <Link to="/portfolio">
+              <i class="bx bxs-folder-open"></i>
+              <span className="links_name">Portfolio</span>
+            </Link>
+            <span className="tooltip">Portfolio</span>
           </li>
+
           <li>
             <a href="/">
               <i class="bx bx-history"></i>
@@ -50,12 +51,13 @@ const Sidebar = () => {
             </a>
             <span className="tooltip">Time Line</span>
           </li>
+
           <li>
-            <Link to="/contactMe">
-              <i class="bx bxs-user"></i>
-              <span className="links_name">Contact me</span>
-            </Link>
-            <span className="tooltip">Contact me</span>
+            <a href={cvPdf} target="_blank" rel="noreferrer">
+              <i class="bx bx-file-blank"></i>
+              <span className="links_name">PDF CV</span>
+            </a>
+            <span className="tooltip">PDF CV</span>
           </li>
         </ul>
       </div>

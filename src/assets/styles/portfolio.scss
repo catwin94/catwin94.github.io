@@ -1,0 +1,99 @@
+@import "./variables.scss";
+
+.portfolioContainer {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // border: blueviolet 2px solid;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.portfolio {
+  // border: 2px solid lime;
+  margin-bottom: 3rem;
+  & h1 {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    padding: 0 2px 2px 10px;
+    border-bottom: solid 3px $dpink;
+    // margin-bottom: 0.1rem;
+  }
+}
+
+.navBarPortfolio {
+  // border: red 2px solid;
+  // background: $dpink;
+  // padding: 1rem 0;
+  margin-bottom: 2rem;
+  // border-radius: 1rem;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    & li {
+      border: 3px solid $dpink;
+      // background: $white;
+      padding: 5px;
+      border-radius: 1rem;
+      text-align: center;
+      width: 20rem;
+
+      & i {
+        font-size: 2.2rem;
+      }
+      & h3 {
+        font-size: 1.4rem;
+      }
+
+      &:hover {
+        // border: 3px solid $white;
+        background-color: $dpink;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.portfolioTitle {
+  // border: solid 2px red;
+  border-bottom: solid 2px $dpink;
+  & h3 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.portfolioData {
+  // border: solid 2px blue;
+  margin-top: 10px;
+  // margin: 10px 0 0 17px;
+
+  & ul {
+    list-style: none;
+    & li {
+      display: flex;
+      flex-direction: row;
+      // border: solid 2px rgb(223, 62, 62);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 1rem;
+      box-shadow: 0px 0px 23px 0px rgba(65, 47, 47, 0.4);
+      & i {
+        color: $dpink;
+
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;
+      }
+      & p {
+        padding: 0 0 1rem 0;
+      }
+    }
+  }
+}
