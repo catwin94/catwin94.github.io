@@ -29,13 +29,7 @@ const Sidebar = () => {
             </Link>
             <span className="tooltip">Home</span>
           </li>
-          <li>
-            <Link to="/contactMe">
-              <i className="bx bxs-user"></i>
-              <span className="links_name">Contact me</span>
-            </Link>
-            <span className="tooltip">Contact me</span>
-          </li>
+
           <li>
             <Link to="/portfolio">
               <i className="bx bxs-folder-open"></i>
@@ -58,6 +52,14 @@ const Sidebar = () => {
               <span className="links_name">PDF CV</span>
             </a>
             <span className="tooltip">PDF CV</span>
+          </li>
+
+          <li>
+            <Link to="/contactMe">
+              <i className="bx bxs-user"></i>
+              <span className="links_name">Contact me</span>
+            </Link>
+            <span className="tooltip">Contact me</span>
           </li>
         </ul>
       </div>
