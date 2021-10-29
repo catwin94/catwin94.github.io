@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
+import SkillsComponent from "./SkillsComponent.jsx";
 import "../assets/styles/portfolio.scss";
 import "../assets/styles/home.scss";
 
@@ -336,6 +337,8 @@ const Portfolio = () => {
               </div>
             </div>
           )}
+
+          {check === "skills" && <SkillsComponent list={data.skills} />}
         </div>
       </div>
     </div>
