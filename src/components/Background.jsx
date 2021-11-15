@@ -140,30 +140,102 @@ const data = {
   },
   skills: {
     title: "Skills",
-    languages: ["Spanish native", "English advanced", "French beginner"],
-    programming: ["C++", "JavaScript", "Python", "Matlab"],
-    web: {
-      list: ["ReactJS", "HTML", "CSS", "SASS", "Json", "Redux"],
-      images: [
-        "./logos/programming/react_logo.png",
-        "./logos/programming/html_logo.png",
-        "./logos/programming/CSS3_logo.png",
-        "./logos/programming/sass_logo.png",
-        "./logos/programming/JSON_logo.png",
-        "./logos/programming/redux_logo.png",
-      ],
-    },
-    web2: ["ReactJS", "HTML", "CSS", "SASS", "Json", "Redux"],
-    dataScience: ["Pandas", "Numpy", "Matplotlib"],
+    languages: [
+      { title: "Spanish native", level: "100%" },
+      { title: "English advanced", level: "90%" },
+      { title: "French beginner", level: "25%" },
+    ],
+    programming: [
+      {
+        title: "C++",
+        image: "./logos/programming/c_plus_plus.png",
+      },
+      {
+        title: "JavaScript",
+        image: "./logos/programming/javascript_logo.png",
+      },
+      {
+        title: "Python",
+        image: "./logos/programming/python_logo.png",
+      },
+      {
+        title: "Matlab",
+        image: "./logos/programming/matlab_logo.png",
+      },
+    ],
+    web: [
+      {
+        title: "ReactJS",
+        image: "./logos/programming/react_logo.png",
+      },
+      {
+        title: "HTML",
+        image: "./logos/programming/html_logo.png",
+      },
+      {
+        title: "CSS",
+        image: "./logos/programming/CSS3_logo.png",
+      },
+      {
+        title: "SASS",
+        image: "./logos/programming/sass_logo.png",
+      },
+      {
+        title: "Json",
+        image: "./logos/programming/JSON_logo.png",
+      },
+      {
+        title: "Redux",
+        image: "./logos/programming/redux_logo.png",
+      },
+    ],
+    dataScience: [
+      {
+        title: "Pandas",
+        image: "./logos/programming/pandas_logo.png",
+      },
+      {
+        title: "Numpy",
+        image: "./logos/programming/numpy_logo.svg",
+      },
+      {
+        title: "Matplotlib",
+        image: "./logos/programming/mathplotlib_logo.png",
+      },
+    ],
     others: [
-      "Git",
-      "Linux",
-      "Tripoli-4",
-      "RELAP",
-      "Autodesk - AutoCAD 2D",
-      "MCNP - Los Alamos National Lab",
-      "Mathcad PTC",
-      "GammaVision (Gamma Spectroscopy)",
+      {
+        title: "Git",
+        image: "./logos/others/git_logo.png",
+      },
+      {
+        title: "Linux",
+        image: "./logos/others/linux_logo.png",
+      },
+      {
+        title: "Tripoli-4",
+        image: "./logos/others/tripoli_logo.png",
+      },
+      {
+        title: "RELAP",
+        image: "./logos/others/relap_logo.png",
+      },
+      {
+        title: "Autodesk - AutoCAD 2D",
+        image: "./logos/others/autocad_logo.png",
+      },
+      {
+        title: "MCNP - Los Alamos National Lab",
+        image: "./logos/others/mcnp_logo.png",
+      },
+      {
+        title: "Mathcad PTC",
+        image: "./logos/others/mathcad_logo.png",
+      },
+      {
+        title: "GammaVision (Gamma Spectroscopy)",
+        image: "./logos/others/gammavision_logo.png",
+      },
     ],
   },
 };

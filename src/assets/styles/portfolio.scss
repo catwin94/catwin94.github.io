@@ -37,6 +37,22 @@
     flex-wrap: wrap;
 
     & li {
+      & .module-border-wrap {
+        max-width: 250px;
+        padding: 1rem;
+        position: relative;
+        background: linear-gradient(to right, $mainColor, $secondaryColor);
+        padding: 5px;
+        border-radius: 1rem;
+
+        & .module {
+          color: #222;
+          background: $background;
+          padding: 2rem;
+          border-radius: inherit; /* !importanté */
+        }
+      }
+
       border: 3px solid $dpink;
       // background: $white;
       padding: 5px;
