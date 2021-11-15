@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
 import SkillsComponent from "./SkillsComponent.jsx";
+
 import "../assets/styles/portfolio.scss";
 import "../assets/styles/home.scss";
 
@@ -141,11 +142,22 @@ const data = {
     title: "Skills",
     languages: ["Spanish native", "English advanced", "French beginner"],
     programming: ["C++", "JavaScript", "Python", "Matlab"],
-    web: ["ReactJS", "HTML", "CSS", "SASS", "Json", "Redux"],
+    web: {
+      list: ["ReactJS", "HTML", "CSS", "SASS", "Json", "Redux"],
+      images: [
+        "./logos/programming/react_logo.png",
+        "./logos/programming/html_logo.png",
+        "./logos/programming/CSS3_logo.png",
+        "./logos/programming/sass_logo.png",
+        "./logos/programming/JSON_logo.png",
+        "./logos/programming/redux_logo.png",
+      ],
+    },
+    web2: ["ReactJS", "HTML", "CSS", "SASS", "Json", "Redux"],
     dataScience: ["Pandas", "Numpy", "Matplotlib"],
     others: [
       "Git",
-      "Unix",
+      "Linux",
       "Tripoli-4",
       "RELAP",
       "Autodesk - AutoCAD 2D",
@@ -156,7 +168,7 @@ const data = {
   },
 };
 
-const Portfolio = () => {
+const Background = () => {
   const [check, setCheck] = useState("");
 
   return (
@@ -165,7 +177,7 @@ const Portfolio = () => {
       <div className="homeContent">
         <div className="portfolioContainer">
           <div className="portfolio">
-            <h1>Portfolio</h1>
+            <h1>Background</h1>
           </div>
           <div className="navBarPortfolio">
             <ul>
@@ -345,4 +357,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Background;

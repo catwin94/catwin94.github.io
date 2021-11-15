@@ -33,9 +33,9 @@ const Sidebar = () => {
           <li>
             <Link to="/portfolio">
               <i className="bx bxs-folder-open"></i>
-              <span className="links_name">Portfolio</span>
+              <span className="links_name">Background</span>
             </Link>
-            <span className="tooltip">Portfolio</span>
+            <span className="tooltip">Background</span>
           </li>
 
           {/* <li>
