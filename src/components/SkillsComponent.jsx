@@ -9,11 +9,36 @@ const SkillsComponent = (props) => {
   return (
     <react.Fragment>
       <div className="navSkills">
-        <h3 onClick={() => setCategory("languages")}>Languages</h3>
-        <h3 onClick={() => setCategory("programming")}>Programming</h3>
-        <h3 onClick={() => setCategory("web")}>Web Development</h3>
-        <h3 onClick={() => setCategory("dataScience")}>Data Science</h3>
-        <h3 onClick={() => setCategory("others")}>Others | Softwares</h3>
+        <h3
+          onClick={() => setCategory("languages")}
+          className={` ${category === "languages" && "activeTitle"}`}
+        >
+          Languages
+        </h3>
+        <h3
+          onClick={() => setCategory("programming")}
+          className={` ${category === "programming" && "activeTitle"}`}
+        >
+          Programming
+        </h3>
+        <h3
+          onClick={() => setCategory("web")}
+          className={` ${category === "web" && "activeTitle"}`}
+        >
+          Web Development
+        </h3>
+        <h3
+          onClick={() => setCategory("dataScience")}
+          className={` ${category === "dataScience" && "activeTitle"}`}
+        >
+          Data Science
+        </h3>
+        <h3
+          onClick={() => setCategory("others")}
+          className={` ${category === "others" && "activeTitle"}`}
+        >
+          Others | Softwares
+        </h3>
       </div>
       <div className="iconsContainer">
         {category === "languages" && (

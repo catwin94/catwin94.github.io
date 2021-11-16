@@ -3,10 +3,15 @@
 .textListContainer {
   // border: red 2px solid;
   color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   & .textListItem {
     // border: blue solid 2px;
-    min-width: 10rem;
+    width: 80%;
+    min-width: 25rem;
     margin: 1rem;
     padding: 1rem;
     border-radius: 1.5rem;
@@ -25,13 +30,15 @@
     & .progress-line {
       position: relative;
       height: 1.5rem;
-      width: 80%;
+      width: 100%;
       border-radius: 1rem;
-      background-color: $lbrown;
+      background-color: rgba(156, 149, 139, 0.3);
       transform: scaleX(0);
       transform-origin: left;
-      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
-        0px 1px rgba(255, 255, 255, 0.8);
+      // box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+      //   0px 1px rgba(255, 255, 255, 0.8);
+      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
+        0px 1px rgba(156, 149, 139, 0.5);
       animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 
       & span {
@@ -41,7 +48,7 @@
         border-radius: 10px;
         transform: scaleX(0);
         transform-origin: left;
-        animation: animate 1.5s cubic-bezier(1, 0, 0.5, 1) 1s forwards;
+        animation: animate 1.3s cubic-bezier(1, 0, 0.5, 1) 1s forwards;
       }
     }
   }

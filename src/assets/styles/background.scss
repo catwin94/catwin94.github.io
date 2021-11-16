@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.portfolioContainer {
+.backgroundContainer {
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -10,7 +10,7 @@
   padding: 1rem;
 }
 
-.portfolio {
+.background {
   // border: 2px solid lime;
   margin-bottom: 3rem;
   & h1 {
@@ -22,7 +22,7 @@
   }
 }
 
-.navBarPortfolio {
+.navBarBackground {
   // border: red 2px solid;
   // background: $dpink;
   // padding: 1rem 0;

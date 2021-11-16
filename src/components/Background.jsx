@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
 import SkillsComponent from "./SkillsComponent.jsx";
 
-import "../assets/styles/portfolio.scss";
+import "../assets/styles/background.scss";
 import "../assets/styles/home.scss";
 
 const data = {
@@ -247,11 +247,11 @@ const Background = () => {
     <div className="mainContainer">
       <Sidebar />
       <div className="homeContent">
-        <div className="portfolioContainer">
-          <div className="portfolio">
+        <div className="backgroundContainer">
+          <div className="background">
             <h1>Background</h1>
           </div>
-          <div className="navBarPortfolio">
+          <div className="navBarBackground">
             <ul>
               <li
                 onClick={() => setCheck("portfolio")}
