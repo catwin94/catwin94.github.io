@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
 import Skills from "./Skills.jsx";
 import Portfolio from "./Portfolio.jsx";
+import Courses from "./Courses.jsx";
+import Education from "./Education.jsx";
+import WorkExperience from "./WorkExperience.jsx";
 import "../assets/styles/background.scss";
 import "../assets/styles/home.scss";
+import "../assets/styles/cardItem.scss";
 
 const data = {
   experience: {
@@ -294,134 +298,13 @@ const Background = () => {
           {check === "portfolio" && <Portfolio list={data.skills} />}
 
           {check === "education" && (
-            <div className="dataContainer">
-              <div className="dataTitle">
-                <h3>Education</h3>
-              </div>
-              <div className="generalData">
-                {data.education.list.map((item) => (
-                  <div className="dataDetailsContainer">
-                    <i className="bx bxs-diamond"></i>
-                    <div>
-                      <div className="title">
-                        <p>
-                          {item.degreeTitle} at {item.university}
-                        </p>
-                        <div className="titleDetails">
-                          <div>
-                            <i className="bx bxs-calendar"></i>
-                            <p>{item.date}</p>
-                          </div>
-                          <div>
-                            <i className="bx bxs-graduation"></i>
-                            <p>
-                              Degree level: {item.degreeLevel} - {item.rate}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="details">
-                        <p>
-                          <span style={{ fontWeight: "bold" }}>Details:</span>{" "}
-                          {item.details}
-                        </p>
-                      </div>
-                      {item.skills.map(
-                        (skill, key) =>
-                          skill && (
-                            <p className="skills" key={key}>
-                              {skill}
-                            </p>
-                          )
-                      )}
-                    </div>
-
-                    <div
-                      className="logo"
-                      style={{ width: "18rem", minWidth: "12rem" }}
-                    >
-                      <img src={item.logo} alt="" />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <Education array={data.education.list}></Education>
           )}
 
-          {check === "courses" && (
-            <div className="dataContainer">
-              <div className="dataTitle">
-                <h3>Courses</h3>
-              </div>
-              <div className="generalData">
-                <ul>
-                  {data.courses.list.map((item, key) => (
-                    <li className="dataDetailsContainer" key={key}>
-                      <i className="bx bxs-diamond"></i>
-                      <div>
-                        <p className="title">{item.name}</p>
-                        <div className="details">
-                          <p>Details:</p>
-                        </div>
-                        {item.skills.map((skill, key) => (
-                          <p className="skills" key={key}>
-                            {skill}
-                          </p>
-                        ))}
-                      </div>
-                      <div className="logo">
-                        <img src={item.logo} alt="" />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          )}
+          {check === "courses" && <Courses array={data.courses.list}></Courses>}
 
           {check === "experience" && (
-            <div className="dataContainer">
-              <div className="dataTitle">
-                <h3>Experience</h3>
-              </div>
-              <div className="generalData">
-                <ul>
-                  {data.experience.list.map((item, key) => (
-                    <li className="dataDetailsContainer" key={key}>
-                      <i className="bx bxs-diamond"></i>
-                      <div>
-                        <div className="title">
-                          <p>
-                            {item.name} at {item.enterprice}
-                          </p>
-                          <div className="titleDetails">
-                            <i className="bx bxs-calendar"></i>
-                            <p>{item.date}</p>
-                          </div>
-                        </div>
-
-                        <div className="details">
-                          <p>{item.details}</p>
-                        </div>
-
-                        {item.skills.map(
-                          (skill, key) =>
-                            skill && (
-                              <p className="skills" key={key}>
-                                {skill}
-                              </p>
-                            )
-                        )}
-                      </div>
-                      <div className="logo">
-                        <img src={item.logo} alt="" />
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            <WorkExperience array={data.experience.list}></WorkExperience>
           )}
 
           {check === "skills" && <Skills list={data.skills} />}
