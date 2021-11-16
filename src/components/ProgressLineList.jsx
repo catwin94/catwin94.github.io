@@ -1,7 +1,7 @@
 import React from "react";
-import "../assets/styles/textListComponent.scss";
+import "../assets/styles/progressLine.scss";
 
-const TextListComponent = (props) => {
+const ProgressLineList = (props) => {
   const { array } = props;
   return (
     <div className="textListContainer">
@@ -21,4 +21,4 @@ const TextListComponent = (props) => {
   );
 };
 
-export default TextListComponent;
+export default ProgressLineList;

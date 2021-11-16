@@ -1,7 +1,7 @@
 import react, { useState } from "react";
-import IconsComponent from "./IconsComponent.jsx";
 import "../assets/styles/skillsComponent.scss";
-import TextListComponent from "./TextListComponent.jsx";
+import ProgressLineList from "./ProgressLineList.jsx";
+import IconsList from "./IconsList.jsx";
 
 const SkillsComponent = (props) => {
   const [category, setCategory] = useState("");
@@ -42,20 +42,16 @@ const SkillsComponent = (props) => {
       </div>
       <div className="iconsContainer">
         {category === "languages" && (
-          <TextListComponent array={list.languages}></TextListComponent>
+          <ProgressLineList array={list.languages}></ProgressLineList>
         )}
         {category === "programming" && (
-          <IconsComponent array={list.programming}></IconsComponent>
+          <IconsList array={list.programming}></IconsList>
         )}
-        {category === "web" && (
-          <IconsComponent array={list.web}></IconsComponent>
-        )}
+        {category === "web" && <IconsList array={list.web}></IconsList>}
         {category === "dataScience" && (
-          <IconsComponent array={list.dataScience}></IconsComponent>
+          <IconsList array={list.dataScience}></IconsList>
         )}
-        {category === "others" && (
-          <IconsComponent array={list.others}></IconsComponent>
-        )}
+        {category === "others" && <IconsList array={list.others}></IconsList>}
       </div>
     </react.Fragment>
   );

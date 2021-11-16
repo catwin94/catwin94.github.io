@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar.jsx";
-import SkillsComponent from "./SkillsComponent.jsx";
-
+import Skills from "./Skills.jsx";
+import Portfolio from "./Portfolio.jsx";
 import "../assets/styles/background.scss";
 import "../assets/styles/home.scss";
 
@@ -291,6 +291,8 @@ const Background = () => {
             </ul>
           </div>
 
+          {check === "portfolio" && <Portfolio list={data.skills} />}
+
           {check === "education" && (
             <div className="dataContainer">
               <div className="dataTitle">
@@ -422,7 +424,7 @@ const Background = () => {
             </div>
           )}
 
-          {check === "skills" && <SkillsComponent list={data.skills} />}
+          {check === "skills" && <Skills list={data.skills} />}
         </div>
       </div>
     </div>

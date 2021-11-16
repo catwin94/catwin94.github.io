@@ -53,21 +53,21 @@
     }
   }
 
-  & .module-border-wrap {
-    max-width: 250px;
-    padding: 1rem;
-    position: relative;
-    background: linear-gradient(to right, $mainColor, $secondaryColor);
-    padding: 5px;
-    border-radius: 1rem;
+  // & .module-border-wrap {
+  //   max-width: 250px;
+  //   padding: 1rem;
+  //   position: relative;
+  //   background: linear-gradient(to right, $mainColor, $secondaryColor);
+  //   padding: 5px;
+  //   border-radius: 1rem;
 
-    & .module {
-      color: $fontDark;
-      background: $background;
-      padding: 2rem;
-      border-radius: inherit;
-    }
-  }
+  //   & .module {
+  //     color: $fontDark;
+  //     background: $background;
+  //     padding: 2rem;
+  //     border-radius: inherit;
+  //   }
+  // }
 }
 
 @keyframes animate {

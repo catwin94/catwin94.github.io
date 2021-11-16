@@ -1,7 +1,7 @@
 import React from "react";
-import "../assets/styles/iconsComponent.scss";
+import "../assets/styles/iconsList.scss";
 
-const IconsComponent = (props) => {
+const IconsList = (props) => {
   const { array } = props;
 
   return (
@@ -20,4 +20,4 @@ const IconsComponent = (props) => {
   );
 };
 
-export default IconsComponent;
+export default IconsList;
