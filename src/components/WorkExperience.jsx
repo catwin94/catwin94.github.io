@@ -10,7 +10,7 @@ const WorkExperience = (props) => {
       <div className="generalData">
         <ul>
           {array.map((item, key) => (
-            <li className="dataDetailsContainer" key={key}>
+            <li className="cardItem" key={key}>
               <i className="bx bxs-diamond"></i>
               <div>
                 <div className="title">
@@ -18,8 +18,10 @@ const WorkExperience = (props) => {
                     {item.name} at {item.enterprice}
                   </p>
                   <div className="titleDetails">
-                    <i className="bx bxs-calendar"></i>
-                    <p>{item.date}</p>
+                    <div>
+                      <i className="bx bxs-calendar"></i>
+                      <p>{item.date}</p>
+                    </div>
                   </div>
                 </div>
 
