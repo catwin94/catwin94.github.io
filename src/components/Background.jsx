@@ -37,7 +37,7 @@ const data = {
         enterprice: "CNEA-Constituyentes - Argentina",
         logo: "./logos/CNEA_logo.png",
         details:
-          "Comparison of methodologies using X-ray fluorescence in the determination of alloying and impuri-ties in Zry samples TXRF vs. WDXRF.(supervised by Dr. Luciana Cerchietti)",
+          "Comparison of methodologies using X-ray fluorescence in the determination of alloying and impuri-ties in Zry samples TXRF vs. WDXRF. Supervised by Dr. Luciana Cerchietti",
         skills: [],
       },
       {
@@ -46,7 +46,7 @@ const data = {
         enterprice: "CNEA-Ezeiza - Argentina",
         logo: "./logos/CNEA_logo.png",
         details:
-          "Metallographic analysis at the level of the microstructure of a Zircaloy-4 alloy, after having gonethrough three different stages of the industrial process.(supervised by Eng. Gabriel A. Juárez)",
+          "Metallographic analysis at the level of the microstructure of a Zircaloy-4 alloy, after having gonethrough three different stages of the industrial process. Supervised by Eng. Gabriel A. Juárez.",
         skills: [],
       },
       {
@@ -55,7 +55,7 @@ const data = {
         enterprice: "Universidad Tecnológica Nacional (UTN-FRGP) - Argentina",
         logo: "./logos/UTN_logo.png",
         details:
-          "Analytical prediction, conditions for measurement, limits of acceptance and mitigation of vibrationsin structures originated by human activity.(supervised by Dr. Ing. Raúl D. Bertero and Ms. Eng. German Ivaldi)",
+          "Analytical prediction, conditions for measurement, limits of acceptance and mitigation of vibrationsin structures originated by human activity. Supervised by Dr. Eng. Raúl D. Bertero and Ms. Eng. German Ivaldi.",
         skills: [],
       },
       {
@@ -64,7 +64,7 @@ const data = {
         enterprice: "CNEA-Bariloche - Argentina",
         logo: "./logos/CNEA_logo.png",
         details:
-          "Study of tungsten alloys subjected to deformations for applications in fusion reactors.Publication on the XLII AATN.(supervised by Dr. Juana L. Gervasoni)",
+          "Study of tungsten alloys subjected to deformations for applications in fusion reactors.Publication on the XLII AATN. Supervised by Dr. Juana L. Gervasoni",
         skills: ["CYPE – Metal 3D"],
       },
     ],
@@ -124,7 +124,7 @@ const data = {
         rate: "16.5 / 20 (Top 1)",
         university: "Instituto Tecnológico Dan Beninson (IDB), Argentina",
         details:
-          "Thesis topic about deterministic analysis of the RA-10 loop in presence of a LOFA in relation with different flywheels using the thermo-hydraulic simulation software RELAP.",
+          "Master Thesis about deterministic analysis of the RA-10 loop in presence of a LOFA in relation with different flywheels using the thermo-hydraulic simulation software RELAP. Co-funder and vice-president of the student association.",
         skills: ["Relap5"],
         others: "Vice-President & Co-founder of the Student Center IDB",
       },
@@ -136,7 +136,7 @@ const data = {
         rate: "15.5 / 20",
         university: "Universidad Tecnológica Nacional (UTN – FRGP), Argentina",
         details:
-          "Intern,UTN-FRGP, Buenos Aires, Argentina: Analytical prediction, conditions for measurement, limits of acceptance and mitigation of vibrationsin structures originated by human activity. (Scholarship for investigation supervised by Dr. Eng. Raúl D. Bertero)",
+          "Scholarship for investigation supervised by Dr. Eng. Raúl D. Bertero: Analytical prediction, conditions for measurement, limits of acceptance and mitigation of vibrationsin structures originated by human activity.",
         skills: [""],
         others: "",
       },
@@ -242,6 +242,35 @@ const data = {
       },
     ],
   },
+  portfolio: {
+    title: "Portfolio",
+    list: [
+      {
+        title: "E-Commerce site",
+        gitHub: "https://github.com/catwin94/e-commerce",
+        url: "https://catwin94.github.io/e-commerce/",
+        skills: [
+          "ReactJS",
+          "Redux",
+          "Route",
+          "Json",
+          "API",
+          "SASS",
+          "JavaScript",
+          "CSS",
+          "HTML",
+        ],
+        image: "./assets/webProjects/eCommerce.png",
+      },
+      {
+        title: "Rock Paper Scissor game site",
+        gitHub: "https://github.com/catwin94/stone-paper-scissor",
+        url: "https://catwin94.github.io/stone-paper-scissor/",
+        skills: ["JavaScript", "CSS", "HTML"],
+        image: "./assets/webProjects/rpsGame.png",
+      },
+    ],
+  },
 };
 
 const Background = () => {
@@ -295,7 +324,7 @@ const Background = () => {
             </ul>
           </div>
 
-          {check === "portfolio" && <Portfolio list={data.skills} />}
+          {check === "portfolio" && <Portfolio list={data.portfolio.list} />}
 
           {check === "education" && (
             <Education array={data.education.list}></Education>
