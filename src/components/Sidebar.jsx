@@ -31,7 +31,7 @@ const Sidebar = () => {
           </li>
 
           <li>
-            <Link to="/portfolio">
+            <Link to="/background">
               <i className="bx bxs-folder-open"></i>
               <span className="links_name">Background</span>
             </Link>

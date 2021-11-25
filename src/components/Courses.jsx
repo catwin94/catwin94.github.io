@@ -10,7 +10,7 @@ const Courses = (props) => {
       <div className="generalData">
         <ul>
           {array.map((item, key) => (
-            <li className="dataDetailsContainer" key={key}>
+            <li className="cardItem" key={key}>
               <i className="bx bxs-diamond"></i>
               <div>
                 <p className="title">{item.name}</p>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Fragment } from "react";
 
 const Education = (props) => {
   const { array } = props;
@@ -10,7 +9,7 @@ const Education = (props) => {
       </div>
       <div className="generalData">
         {array.map((item) => (
-          <div className="dataDetailsContainer">
+          <div className="cardItem">
             <i className="bx bxs-diamond"></i>
             <div>
               <div className="title">
