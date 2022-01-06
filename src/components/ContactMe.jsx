@@ -8,8 +8,8 @@ const ContactMe = () => {
     <div className="mainContainer">
       <Sidebar />
       <div className="homeContent">
-        <div className="contactContainer">
-          <div className="contact">
+        <div className="sectionContainer">
+          <div className="mainTitle">
             <h1>Contact Me</h1>
             {/* <p>I am available for hire</p> */}
           </div>

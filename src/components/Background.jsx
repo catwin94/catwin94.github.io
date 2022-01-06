@@ -280,8 +280,8 @@ const Background = () => {
     <div className="mainContainer">
       <Sidebar />
       <div className="homeContent">
-        <div className="backgroundContainer">
-          <div className="background">
+        <div className="sectionContainer">
+          <div className="mainTitle">
             <h1>Background</h1>
           </div>
           <div className="navBarBackground">

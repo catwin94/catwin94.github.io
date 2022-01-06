@@ -31,6 +31,14 @@ const Sidebar = () => {
           </li>
 
           <li>
+            <Link to="/aboutMe">
+              <i className="bx bx-book-reader"></i>
+              <span className="links_name">About me</span>
+            </Link>
+            <span className="tooltip">About me</span>
+          </li>
+
+          <li>
             <Link to="/background">
               <i className="bx bxs-folder-open"></i>
               <span className="links_name">Background</span>

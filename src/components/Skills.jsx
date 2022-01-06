@@ -4,7 +4,7 @@ import ProgressLineList from "./ProgressLineList.jsx";
 import IconsList from "./IconsList.jsx";
 
 const SkillsComponent = (props) => {
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("languages");
   const { list } = props;
   return (
     <react.Fragment>

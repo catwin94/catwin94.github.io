@@ -12,11 +12,29 @@
 
 .homeContent {
   width: calc(100vw - 78px);
-
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.mainTitle {
+  margin-bottom: 3rem;
+  & h1 {
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    padding: 0 2px 2px 10px;
+    border-bottom: solid 3px $dpink;
+  }
+
+  & p {
+    font-size: medium;
+  }
 }
 
 //Usando grid
@@ -110,5 +128,31 @@
   }
   & p {
     text-align: justify;
+  }
+}
+
+//Tablet
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+//Mobile
+@media only screen and (max-width: 768px) {
+  .presentationContainer {
+    flex-direction: column;
+    justify-content: center;
+
+    & .profile {
+      font-size: 1.9rem;
+
+      & .redes {
+        & a i {
+          margin-top: 4rem;
+        }
+      }
+    }
+
+    & img {
+      margin-top: 8rem;
+    }
   }
 }
