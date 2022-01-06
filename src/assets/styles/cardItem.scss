@@ -1,5 +1,18 @@
 @import "./variables.scss";
 
+//div Container
+.generalData {
+  // border: solid 2px blue;
+  margin-top: 10px;
+  // max-width: 120rem;
+  width: 70vw;
+  // margin: 10px 0 0 17px;
+
+  & ul {
+    list-style: none;
+  }
+}
+
 //List ul of cards li (can be a div element)
 .cardItem {
   display: flex;
@@ -116,4 +129,20 @@
       border-radius: inherit;
     }
   }
+}
+
+//Tablet
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  //div Container
+  .generalData {
+    width: 95vw;
+
+    & ul {
+      list-style: none;
+    }
+  }
+}
+
+//Mobile
+@media only screen and (max-width: 768px) {
 }

@@ -36,3 +36,31 @@
     }
   }
 }
+
+//Tablet
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+//Mobile
+@media only screen and (max-width: 768px) {
+  .listContainer {
+    padding-left: 1rem;
+
+    & ul {
+      & li {
+        & h2 {
+          margin-right: 0;
+          width: 8rem;
+          padding-left: 0;
+        }
+
+        & a {
+          font-size: 1.6rem;
+          & i {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
