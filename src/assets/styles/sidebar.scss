@@ -1,5 +1,10 @@
 @import "./variables.scss";
 
+.sidebarContent {
+  height: 100vh;
+  width: 78px;
+}
+
 .sidebar {
   //Inactive
   position: fixed;
@@ -140,5 +145,81 @@
 
   & ~ .homeContent {
     min-width: calc(100vw - 240px);
+  }
+}
+
+//Tablet
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .sidebarContent {
+    height: 6rem;
+    width: 10vw;
+  }
+
+  .sidebar {
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+
+    & .logo_content {
+      display: none;
+      & .logo {
+        display: none;
+      }
+      & > i {
+        position: static;
+        transform: translateX(0);
+      }
+    }
+
+    // List of icons
+    & ul {
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 100%;
+      & li {
+        width: 4rem;
+      }
+    }
+  }
+}
+
+//Mobile
+@media only screen and (max-width: 768px) {
+  .sidebarContent {
+    height: 6rem;
+    width: 0vw;
+  }
+
+  .sidebar {
+    height: 6rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+
+    & .logo_content {
+      display: none;
+      & .logo {
+        display: none;
+      }
+      & > i {
+        position: static;
+        transform: translateX(0);
+      }
+    }
+
+    // List of icons
+    & ul {
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 100%;
+      & li {
+        width: 4rem;
+      }
+    }
   }
 }

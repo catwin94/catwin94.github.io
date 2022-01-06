@@ -5,10 +5,6 @@
   display: flex;
   width: 100vw;
 }
-.sidebarContent {
-  height: 100vh;
-  width: 78px;
-}
 
 .homeContent {
   width: calc(100vw - 78px);
@@ -133,10 +129,40 @@
 
 //Tablet
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .homeContent {
+    width: 100vw;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .presentationContainer {
+    flex-direction: column;
+    justify-content: center;
+
+    & .profile {
+      font-size: 1.9rem;
+
+      & .redes {
+        & a i {
+          margin-top: 4rem;
+        }
+      }
+    }
+
+    & img {
+      margin-top: 8rem;
+    }
+  }
 }
 
 //Mobile
 @media only screen and (max-width: 768px) {
+  .homeContent {
+    width: 100vw;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
   .presentationContainer {
     flex-direction: column;
     justify-content: center;
