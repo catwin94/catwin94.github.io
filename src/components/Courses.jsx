@@ -15,7 +15,7 @@ const Courses = (props) => {
               <div>
                 <p className="title">{item.name}</p>
                 <div className="details">
-                  <p>Details:</p>
+                  <p>Content:</p>
                 </div>
                 {item.skills.map((skill, key) => (
                   <p className="skillTag" key={key}>

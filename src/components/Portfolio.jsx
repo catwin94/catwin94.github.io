@@ -9,7 +9,7 @@ const Portfolio = (props) => {
       </div>
       <div className="generalData">
         {list.map((item, key) => (
-          <div className="cardItem" key={key}>
+          <div className="cardItem" style={{ flexWrap: "wrap" }} key={key}>
             <i className="bx bxs-diamond"></i>
             <div>
               <div className="title">

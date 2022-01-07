@@ -12,21 +12,31 @@ const Education = (props) => {
           <div className="cardItem">
             <i className="bx bxs-diamond"></i>
             <div>
-              <div className="title">
-                <p>
-                  {item.degreeTitle} at {item.university}
-                </p>
-                <div className="titleDetails">
-                  <div>
-                    <i className="bx bxs-calendar"></i>
-                    <p>{item.date}</p>
+              <div className="title" style={{ display: "flex" }}>
+                <div>
+                  <p>
+                    {item.degreeTitle} at {item.university}
+                  </p>
+                  <div className="titleDetails">
+                    <div>
+                      <i className="bx bxs-calendar"></i>
+                      <p>{item.date}</p>
+                    </div>
+                    <div>
+                      <i className="bx bxs-graduation"></i>
+                      <p>
+                        Degree level: {item.degreeLevel} - {item.rate}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <i className="bx bxs-graduation"></i>
-                    <p>
-                      Degree level: {item.degreeLevel} - {item.rate}
-                    </p>
-                  </div>
+                </div>
+
+                <div
+                  className="logo"
+                  style={{ width: "19rem", minWidth: "12rem" }}
+                >
+                  {/* <div className="logo"> */}
+                  <img src={item.logo} alt="" />
                 </div>
               </div>
 
@@ -44,10 +54,6 @@ const Education = (props) => {
                     </p>
                   )
               )}
-            </div>
-
-            <div className="logo" style={{ width: "18rem", minWidth: "12rem" }}>
-              <img src={item.logo} alt="" />
             </div>
           </div>
         ))}

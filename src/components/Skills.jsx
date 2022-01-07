@@ -40,7 +40,7 @@ const SkillsComponent = (props) => {
           Others | Softwares
         </h3>
       </div>
-      <div className="iconsContainer">
+      <div>
         {category === "languages" && (
           <ProgressLineList array={list.languages}></ProgressLineList>
         )}

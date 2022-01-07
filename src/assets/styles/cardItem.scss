@@ -2,11 +2,8 @@
 
 //div Container
 .generalData {
-  // border: solid 2px blue;
   margin-top: 10px;
-  // max-width: 120rem;
   width: 70vw;
-  // margin: 10px 0 0 17px;
 
   & ul {
     list-style: none;
@@ -17,12 +14,13 @@
 .cardItem {
   display: flex;
   flex-direction: row;
-  // justify-content: space-between;
+  align-content: center;
+  justify-content: center;
   padding: 2rem;
   margin: 2rem 0;
-  // padding-bottom: 20px;
   border-radius: 1rem;
   box-shadow: 0px 0px 23px 0px rgba(65, 47, 47, 0.4);
+
   & i {
     color: $dpink;
 
@@ -32,12 +30,13 @@
   }
 
   & div {
-    width: 100%;
+    width: 95%;
     & .title {
       font-weight: bold;
       font-size: 2rem;
       margin-bottom: 2.5rem;
       cursor: default;
+      width: 100%;
 
       & .titleDetails {
         display: flex;
@@ -46,6 +45,7 @@
         font-style: italic;
         font-size: 1.4rem;
         margin-top: 0.5rem;
+        width: 100%;
 
         & > div,
         a {
@@ -91,7 +91,8 @@
 
     & .skillsTagContainer .skillTag,
     .skillTag {
-      display: inline;
+      // display: inline;
+      display: inline-block;
       font-size: 1.8rem;
       border: solid $dpink 2px;
       color: $dpink;
@@ -110,15 +111,18 @@
     align-items: center;
     width: 12rem;
     min-width: 8rem;
-    height: 12rem;
-    margin-left: 3rem;
+    height: fit-content;
+    margin-left: 2rem;
+
     & img {
       width: 100%;
     }
   }
 
   & .imgProject {
-    height: 30rem;
+    margin: 3rem 0;
+    height: 50rem;
+    width: 80rem;
     box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
 
@@ -145,4 +149,66 @@
 
 //Mobile
 @media only screen and (max-width: 768px) {
+  //div Container
+  .generalData {
+    width: 100vw;
+  }
+
+  //List ul of cards li (can be a div element)
+  .cardItem {
+    padding: 1rem;
+    margin: 0 0 1.5rem 0;
+    border-radius: 0rem;
+
+    & i {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    & div {
+      // border: blue solid 2px;
+      width: 91%;
+      & .title {
+        font-size: 1.6rem;
+
+        & .titleDetails {
+          margin-top: 0.5rem;
+
+          & > div,
+          a {
+            width: auto;
+            font-size: 1.25rem;
+            margin-right: 0rem;
+
+            & i {
+              line-height: 1.1rem;
+            }
+          }
+        }
+      }
+
+      & .details {
+        font-size: 1.5rem;
+        text-align: left;
+        padding-bottom: 1rem;
+      }
+
+      & .skillsTagContainer .skillTag,
+      .skillTag {
+        font-size: 1.4rem;
+      }
+    }
+
+    & .logo {
+      margin-left: 2rem;
+      & img {
+        width: 100%;
+      }
+    }
+
+    & .imgProject {
+      // margin: 3rem 0;
+      height: 30rem;
+    }
+  }
 }

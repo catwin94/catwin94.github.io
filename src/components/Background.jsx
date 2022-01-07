@@ -129,7 +129,8 @@ const data = {
         others: "Vice-President & Co-founder of the Student Center IDB",
       },
       {
-        logo: "./logos/UTN_logo.png",
+        // logo: "./logos/UTN_logo.png",
+        logo: "./logos/UTN_logo2.png",
         degreeTitle: "Civil Engineer",
         date: "Mar 2012 -Aug 2015",
         degreeLevel: "Bachelor",

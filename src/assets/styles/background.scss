@@ -2,8 +2,6 @@
 
 .navBarBackground {
   // border: red 2px solid;
-  // background: $dpink;
-  // padding: 1rem 0;
   margin-bottom: 2rem;
   // border-radius: 1rem;
 
@@ -15,24 +13,7 @@
     flex-wrap: wrap;
 
     & li {
-      & .module-border-wrap {
-        max-width: 250px;
-        padding: 1rem;
-        position: relative;
-        background: linear-gradient(to right, $mainColor, $secondaryColor);
-        padding: 5px;
-        border-radius: 1rem;
-
-        & .module {
-          color: #222;
-          background: $background;
-          padding: 2rem;
-          border-radius: inherit; /* !importanté */
-        }
-      }
-
       border: 3px solid $dpink;
-      // background: $white;
       padding: 5px;
       margin: 1px 0;
       border-radius: 1rem;
@@ -70,5 +51,37 @@
   & h3 {
     font-size: 2rem;
     padding: 0 1rem 0.5rem 1rem;
+  }
+}
+
+//Tablet
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+//Mobile
+@media only screen and (max-width: 768px) {
+  .navBarBackground {
+    // border: red 2px solid;
+    // margin-bottom: 2rem;
+
+    & ul {
+      & li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        width: 8rem;
+        height: 6.8rem;
+
+        & h3 {
+          font-size: 1.2rem;
+        }
+
+        & i {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }

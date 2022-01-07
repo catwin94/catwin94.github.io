@@ -2,7 +2,6 @@
 
 .navSkills {
   display: flex;
-  // border: green 2px solid;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -21,14 +20,38 @@
     }
     &.activeTitle {
       border-bottom: solid $pink 3.1px;
-      // font-size: 1.45rem;
       color: $dpink;
     }
   }
 }
 
-.iconsContainer {
-  // border: red 2px solid;
-  // margin-top: 10rem;
-  margin: 5rem 5rem 0rem;
+//Tablet
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .navSkills {
+    height: fit-content;
+    margin: 10rem 0 3rem 0;
+
+    & h3 {
+      padding: 6px 1rem;
+    }
+  }
+}
+
+//Mobile
+@media only screen and (max-width: 768px) {
+  .navSkills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: fit-content;
+    cursor: pointer;
+    margin: 2rem 0 0rem 0;
+    transition: all ease 1s;
+
+    & h3 {
+      padding: 6px 1rem;
+    }
+  }
 }

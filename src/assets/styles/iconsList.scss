@@ -11,8 +11,6 @@ $iconSize: 11rem;
   flex-wrap: wrap;
   justify-content: space-around;
 
-  // border: green solid 2px;
-  // background: linear-gradient(to left top, #7400b8, $aquamarine);
   border-radius: 1.5rem;
 
   & .icon_logo {
@@ -21,7 +19,6 @@ $iconSize: 11rem;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    // background: linear-gradient(to left top, $purple, $aquamarine);
     border-radius: 1rem;
     margin: 1rem;
     padding: 1rem;
@@ -31,14 +28,6 @@ $iconSize: 11rem;
       transform: scale(1.2);
     }
 
-    // & h3 {
-    //   font-size: small;
-    // }
-
-    // & p {
-    //   color: $fontDark;
-    //   font-weight: bold;
-    // }
     & img {
       background: $crema;
       padding: 1rem;
@@ -50,40 +39,35 @@ $iconSize: 11rem;
   }
 }
 
-// .module-border-wrap {
-//   // max-width: 250px;
-//   position: relative;
-//   // background: linear-gradient(to right, $mainColor, $secondaryColor);
-//   padding: 4px;
-//   border-radius: 1.1rem;
+//Tablet
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  $iconSize: 8.5rem;
+  .skillsIcons {
+    padding: 0;
+    margin-top: 2rem;
 
-//   & .module {
-//     color: $fontDark;
-//     background: $background;
-//     // padding: 2rem;
-//     border-radius: 0.9rem; /* !importanté */
+    & .icon_logo {
+      & img {
+        width: $iconSize;
+        height: $iconSize;
+      }
+    }
+  }
+}
 
-//     & .icon_logo2 {
-//       display: flex;
-//       // border: red solid 2px;
-//       flex-direction: column;
-//       justify-content: space-around;
-//       align-items: center;
-//       border-radius: 1rem;
-//       margin: 1rem;
-//       padding: 1rem;
-//       & p {
-//         color: $fontDark;
-//         font-weight: bold;
-//       }
-//       & img {
-//         background: $crema;
-//         padding: 1rem;
-//         border-radius: 2rem;
-//         width: 8rem;
-//         height: 8rem;
-//         object-fit: contain;
-//       }
-//     }
-//   }
-// }
+//Mobile
+@media only screen and (max-width: 768px) {
+  $iconSize: 7rem;
+  .skillsIcons {
+    padding: 0;
+    margin-top: 0.5rem;
+
+    & .icon_logo {
+      margin: 0.75rem;
+      & img {
+        width: $iconSize;
+        height: $iconSize;
+      }
+    }
+  }
+}
