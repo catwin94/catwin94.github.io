@@ -43,7 +43,14 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="imgProject">
-              <img src={item.image} alt="" />
+              <iframe
+                id="inlineFrameExample"
+                title="Inline Frame Example"
+                width="100%"
+                height="100%"
+                src={item.url}
+              ></iframe>
+              {/* <img src={item.image} alt="" /> */}
             </div>
           </div>
         ))}
