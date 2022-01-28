@@ -161,6 +161,10 @@ export const dataSlice = createSlice({
           image: "./logos/programming/javascript_logo.png",
         },
         {
+          title: "TypeScript",
+          image: "./logos/programming/typescript_logo.svg",
+        },
+        {
           title: "Python",
           image: "./logos/programming/python_logo.png",
         },
@@ -247,6 +251,24 @@ export const dataSlice = createSlice({
     portfolio: {
       title: "Portfolio",
       list: [
+        {
+          title: "Movie Fun site",
+          gitHub: "https://github.com/catwin94/movie_website",
+          url: "https://catwin94.github.io/movie_website/",
+          skills: [
+            "ReactJS",
+            "TypeScript",
+            "Redux",
+            "Route",
+            "Json",
+            "API",
+            "SASS",
+
+            "CSS",
+            "HTML",
+          ],
+          image: "./assets/webProjects/eCommerce.png",
+        },
         {
           title: "E-Commerce site",
           gitHub: "https://github.com/catwin94/e-commerce",
