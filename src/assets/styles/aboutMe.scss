@@ -6,3 +6,16 @@
     margin: 0 5rem 1rem;
   }
 }
+
+//Mobile
+@media only screen and (max-width: 768px) {
+  .aboutMe {
+    width: 100%;
+    margin: 0;
+
+    & p {
+      margin: 0 1.5rem;
+      // text-align: left;
+    }
+  }
+}
