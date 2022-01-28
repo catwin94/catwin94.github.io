@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5334fc1.chunk.css",
+    "main.css": "/static/css/main.659af73c.chunk.css",
     "main.js": "/static/js/main.2323f4ab.chunk.js",
     "main.js.map": "/static/js/main.2323f4ab.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3641f4b9.js",
@@ -8,7 +8,7 @@
     "static/js/2.e68e4435.chunk.js": "/static/js/2.e68e4435.chunk.js",
     "static/js/2.e68e4435.chunk.js.map": "/static/js/2.e68e4435.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.d5334fc1.chunk.css.map": "/static/css/main.d5334fc1.chunk.css.map",
+    "static/css/main.659af73c.chunk.css.map": "/static/css/main.659af73c.chunk.css.map",
     "static/js/2.e68e4435.chunk.js.LICENSE.txt": "/static/js/2.e68e4435.chunk.js.LICENSE.txt",
     "static/media/Resume_Catalina.109bf3da.pdf": "/static/media/Resume_Catalina.109bf3da.pdf",
     "static/media/perfil_photo.817784f9.png": "/static/media/perfil_photo.817784f9.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.3641f4b9.js",
     "static/js/2.e68e4435.chunk.js",
-    "static/css/main.d5334fc1.chunk.css",
+    "static/css/main.659af73c.chunk.css",
     "static/js/main.2323f4ab.chunk.js"
   ]
 }
