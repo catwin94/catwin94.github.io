@@ -2,10 +2,12 @@ import react, { useState } from "react";
 import "../assets/styles/skillsComponent.scss";
 import ProgressLineList from "./ProgressLineList.jsx";
 import IconsList from "./IconsList.jsx";
+import { useSelector } from "react-redux";
 
-const SkillsComponent = (props) => {
+const SkillsComponent = () => {
   const [category, setCategory] = useState("languages");
-  const { list } = props;
+  const skillsData = useSelector((state) => state.data.skills);
+
   return (
     <react.Fragment>
       <div className="navSkills">
@@ -42,16 +44,18 @@ const SkillsComponent = (props) => {
       </div>
       <div>
         {category === "languages" && (
-          <ProgressLineList array={list.languages}></ProgressLineList>
+          <ProgressLineList array={skillsData.languages}></ProgressLineList>
         )}
         {category === "programming" && (
-          <IconsList array={list.programming}></IconsList>
+          <IconsList array={skillsData.programming}></IconsList>
         )}
-        {category === "web" && <IconsList array={list.web}></IconsList>}
+        {category === "web" && <IconsList array={skillsData.web}></IconsList>}
         {category === "dataScience" && (
-          <IconsList array={list.dataScience}></IconsList>
+          <IconsList array={skillsData.dataScience}></IconsList>
         )}
-        {category === "others" && <IconsList array={list.others}></IconsList>}
+        {category === "others" && (
+          <IconsList array={skillsData.others}></IconsList>
+        )}
       </div>
     </react.Fragment>
   );

@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const dataSlice = createSlice({
-  name: "dataReducer",
+  name: "data",
   initialState: {
     aboutMe: [
       "I am an engineer who recently became in love with web development and started studying Front-End using ReactJS, JavaScript, TypeScript, HTML, CSS, SASS, etc. This, combined with my C++ and Python experience, could help me become a Full-Stack developer.",
@@ -277,5 +277,5 @@ export const dataSlice = createSlice({
   reducers: {},
 });
 
-export const {} = dataSlice.actions;
+// export const {} = dataSlice.actions;
 export default dataSlice.reducer;

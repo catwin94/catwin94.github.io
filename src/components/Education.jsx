@@ -1,15 +1,17 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const Education = (props) => {
-  const { array } = props;
+const Education = () => {
+  const educationData = useSelector((state) => state.data.education.list);
+
   return (
     <div className="dataContainer">
       <div className="dataTitle">
         <h3>Education</h3>
       </div>
       <div className="generalData">
-        {array.map((item) => (
-          <div className="cardItem">
+        {educationData.map((item, key) => (
+          <div className="cardItem" key={key}>
             <i className="bx bxs-diamond"></i>
             <div>
               <div className="title" style={{ display: "flex" }}>

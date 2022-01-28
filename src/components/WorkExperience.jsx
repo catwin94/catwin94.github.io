@@ -1,7 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const WorkExperience = (props) => {
-  const { array } = props;
+const WorkExperience = () => {
+  const experienceData = useSelector((state) => state.data.experience.list);
+
   return (
     <div className="dataContainer">
       <div className="dataTitle">
@@ -9,7 +11,7 @@ const WorkExperience = (props) => {
       </div>
       <div className="generalData">
         <ul>
-          {array.map((item, key) => (
+          {experienceData.map((item, key) => (
             <li className="cardItem" key={key}>
               <i className="bx bxs-diamond"></i>
               <div>

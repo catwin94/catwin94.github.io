@@ -1,14 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
-const Portfolio = (props) => {
-  const { list } = props;
+const Portfolio = () => {
+  const portfolioData = useSelector((state) => state.data.portfolio.list);
+
   return (
     <div className="dataContainer">
       <div className="dataTitle">
         <h3>Portfolio</h3>
       </div>
       <div className="generalData">
-        {list.map((item, key) => (
+        {portfolioData.map((item, key) => (
           <div className="cardItem" style={{ flexWrap: "wrap" }} key={key}>
             <i className="bx bxs-diamond"></i>
             <div>
