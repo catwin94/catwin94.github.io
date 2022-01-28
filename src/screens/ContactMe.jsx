@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "./Sidebar.jsx";
+import Sidebar from "../components/Sidebar.jsx";
 import "../assets/styles/contactMe.scss";
 import "../assets/styles/home.scss";
 
@@ -11,7 +11,6 @@ const ContactMe = () => {
         <div className="sectionContainer">
           <div className="mainTitle">
             <h1>Contact Me</h1>
-            {/* <p>I am available for hire</p> */}
           </div>
 
           <div className="listContainer">

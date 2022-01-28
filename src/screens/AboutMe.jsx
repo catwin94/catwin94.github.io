@@ -1,6 +1,6 @@
 import React from "react";
 
-import Sidebar from "./Sidebar.jsx";
+import Sidebar from "../components/Sidebar.jsx";
 
 import "../assets/styles/home.scss";
 
@@ -40,7 +40,6 @@ const AboutMe = () => {
           </div>
           <section className="dataContainer ">
             <div className="infoContainer">
-              {/* <h3>About Me</h3> */}
               {homeData.about.map((text) => (
                 <p>{text}</p>
               ))}

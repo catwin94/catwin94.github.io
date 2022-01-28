@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Home from "./components/Home.jsx";
-import AboutMe from "./components/AboutMe.jsx";
-import ContactMe from "./components/ContactMe.jsx";
-import Background from "./components/Background.jsx";
+import Home from "../screens/Home.jsx";
+import AboutMe from "../screens/AboutMe.jsx";
+import ContactMe from "../screens/ContactMe.jsx";
+import Background from "../screens/Background.jsx";
 
 const App = () => {
   return (

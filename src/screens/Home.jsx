@@ -1,7 +1,6 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import perfilImg from "../assets/images/perfil_photo.png";
-import Sidebar from "./Sidebar.jsx";
+import Sidebar from "../components/Sidebar.jsx";
 import "../assets/styles/App.scss";
 import "../assets/styles/home.scss";
 
@@ -33,8 +32,6 @@ import "../assets/styles/home.scss";
 const Home = () => {
   return (
     <div className="mainContainer">
-      {/* <div className="sidebarContent"></div>
-      <div className="homeContent"></div> */}
       <Sidebar />
 
       <div className="homeContent ">
@@ -69,14 +66,6 @@ const Home = () => {
 
           <img className="perfil-img" src={perfilImg} alt="" />
         </div>
-        {/* <section className="dataContainer">
-          <div className="infoContainer">
-            <h3>About Me</h3>
-            {homeData.about.map((text) => (
-              <p>{text}</p>
-            ))}
-          </div>
-        </section> */}
       </div>
     </div>
   );

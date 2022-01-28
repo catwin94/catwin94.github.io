@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Sidebar from "./Sidebar.jsx";
-import Skills from "./Skills.jsx";
-import Portfolio from "./Portfolio.jsx";
-import Courses from "./Courses.jsx";
-import Education from "./Education.jsx";
-import WorkExperience from "./WorkExperience.jsx";
+import Sidebar from "../components/Sidebar.jsx";
+import Skills from "../components/Skills.jsx";
+import Portfolio from "../components/Portfolio.jsx";
+import Courses from "../components/Courses.jsx";
+import Education from "../components/Education.jsx";
+import WorkExperience from "../components/WorkExperience.jsx";
 import "../assets/styles/background.scss";
 import "../assets/styles/home.scss";
 import "../assets/styles/cardItem.scss";
