@@ -1,8 +1,7 @@
 import React from "react";
-
 import Sidebar from "../components/Sidebar.jsx";
-
 import "../assets/styles/home.scss";
+import "../assets/styles/aboutMe.scss";
 import { useSelector } from "react-redux";
 
 const AboutMe = () => {
@@ -16,8 +15,9 @@ const AboutMe = () => {
           <div className="mainTitle">
             <h1>About me</h1>
           </div>
+
           <section className="dataContainer ">
-            <div className="infoContainer">
+            <div className="infoContainer aboutMe">
               {aboutMe.map((text, key) => (
                 <p key={key}>{text}</p>
               ))}
